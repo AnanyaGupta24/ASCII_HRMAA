@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="increment.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+		<h1>COUNTER</h1>
+		<div class="card">
+			<h2 id="root"></h2>
+            <button onclick="reset()">Reset</button>
+			<button onclick="decrement()">-</button>
+            <button onclick="increment()">+</button>
+        </div>
+    </div>
+    <script>
+        var data=0;
+        document.getElementById("root").innerText=data;
+        function reset(){
+            data=0;
+            document.getElementById("root").innerText=data;
+        }
+        function decrement(){
+            data=data-1;
+            document.getElementById("root").innerText=data;
+        }
+        function increment(){
+            data=data+1;
+            document.getElementById("root").innerText=data;
+        }
+    </script>
+</body>
+</html>
